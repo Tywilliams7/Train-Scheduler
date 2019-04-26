@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choo Choo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--Title-->
+        <div class="jumbotron text-center top">
+            <h1 class="display-4">Find Your Train!</h1>
+            <p class="lead">Make sure to check when your train departs.</p>
+        </div>
+        <!--Trains-->
+        <div class="card border-info mb-3">
+            <div class="card-header">Current Train Schedule</div>
+            <div class="card-body text-info middle-piece">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- <tr>
+                            <th scope="row">Train 1</th>
+                            <td>Boston</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Train 2</th>
+                            <td>Orlando</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr> -->
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--Form-->
+        <div class="card border-info mb-3">
+            <div class="card-header">Add Train</div>
+            <div class="card-body middle-piece">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputTrain">Train Name</label>
+                        <input type="train" class="form-control" id="train-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputdestination">Destination</label>
+                        <input type="destination" class="form-control" id="train-destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputTrainTime">First Train Time (military-time)</label>
+                        <input type="trainTime" class="form-control" id="train-time">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFrequency">Frequency</label>
+                        <input type="frequency" class="form-control" id="train-frequency">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
+                </form>
+            </div>
+
+
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+        <script src="assets/javascript/train.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</body>
+
+</html>

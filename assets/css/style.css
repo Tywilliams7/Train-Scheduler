@@ -1,0 +1,10 @@
+body{
+    background-image: url(../images/tracks.jpg);
+    background-size: contain;
+}
+.middle-piece{
+    background-color: darkseagreen;
+}
+.top{
+    background-color: paleturquoise;
+}
